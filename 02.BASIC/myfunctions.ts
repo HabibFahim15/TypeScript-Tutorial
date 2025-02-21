@@ -1,8 +1,8 @@
-function addTwo(num: number){
+function addTwo(num: number): number{
   // num.toUperCase() --> if the value type is not defined then it could be a problem.so for specific type function define the value type
 
-  // return num + 2
-  return 'hello world'
+  return num + 2
+  // return 'hello world'
 }
 
 function getUpper(val: string){
@@ -19,5 +19,32 @@ getUpper('fahim')
 
 signUpUser("shakib khan", "shakib@.com", false)
 loginUser('h', 'h@h.com')
+
+function getValue(myVal: number): boolean{
+  if(myVal > 5){
+    return true
+  }
+  return false
+}
+
+
+const getHello =(s: string):string =>{
+ return ''
+}
+
+const heros = ["thor", "spiderman", "ironman"]
+// const heros = [1, 2, 3]
+
+heros.map((hero): string =>{ //function type not neccessary in map
+  return `hero is ${hero}`
+})
+
+
+function consoleError(errmsg: string): void{
+  console.log(errmsg);
+}
+function handleError(errmsg: string): never{
+  throw new Error(errmsg);
+}
 
 export {}
