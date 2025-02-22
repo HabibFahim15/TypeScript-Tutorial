@@ -16,4 +16,25 @@ function createCourse() : {name:string, price: number}{
 
 createUser({name:'fahim', isPaid: false})
 
+
+
+
+
+
+
+
+
+
+
+
+console.log(createUser(newUser))
+
+console.log(createCourse())
+
+let num=10
+function alert(){
+  if(num===10){
+    return alert()
+  }
+}
 export{}
